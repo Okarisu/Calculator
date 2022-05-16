@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.vektor_soucin.VektorSoucinFragment">
+
+    <!-- První vektor -->
+    <EditText
+        android:id="@+id/vect1X"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:hint="X"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/vect1Y"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:hint="Y"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/vect1X"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/vect1Z"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:hint="Z"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/vect1Y"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Druhý vektor -->
+
+    <EditText
+        android:id="@+id/vect2X"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        android:hint="X"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/vect2Y"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        android:hint="Y"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/vect2X"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/vect2Z"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="240dp"
+        android:gravity="center_horizontal"
+        android:hint="Z"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/vect2Y"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Tlačítko a výsledek-->
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vect2Y"
+        tools:ignore="MissingConstraints" />
+    <!--app:layout_constraintTop_toBottomOf="@id/round_up_switch"-->
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculate_button"
+        tools:text="(0; 0; 0)" />
+</androidx.constraintlayout.widget.ConstraintLayout>
