@@ -12,20 +12,14 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.calculator.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.calculator.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_scalar_product"
+        android:name="com.example.calculator.ui.math.scalar_product.ScalarProductFragment"
+        android:label="@string/menu_scalar_product"
+        tools:layout="@layout/fragment_scalar_product" />
 
     <fragment
         android:id="@+id/nav_vector_product"
-        android:name="com.example.calculator.ui.vector_product.VectorProductFragment"
+        android:name="com.example.calculator.ui.math.vector_product.VectorProductFragment"
         android:label="@string/menu_vector_product"
         tools:layout="@layout/fragment_vector_product" />
 </navigation>

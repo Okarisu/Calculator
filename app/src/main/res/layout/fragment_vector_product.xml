@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.gallery.GalleryFragment">
+    tools:context=".ui.math.vector_product.VectorProductFragment">
 
     <!-- První vektor -->
     <EditText
@@ -17,9 +17,8 @@
         android:hint="X"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
     <EditText
         android:id="@+id/vector1Y"
@@ -31,7 +30,8 @@
         android:hint="Y"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/vector1X"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
     <EditText
         android:id="@+id/vector1Z"
@@ -43,9 +43,11 @@
         android:hint="Z"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/vector1Y"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
-    <!-- Druhý vektor -->
+
+    <!-- druhý vektor -->
 
     <EditText
         android:id="@+id/vector2X"
@@ -57,20 +59,21 @@
         android:hint="X"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
     <EditText
         android:id="@+id/vector2Y"
         android:layout_width="53dp"
         android:layout_height="49dp"
         android:layout_marginStart="32dp"
-
         android:layout_marginTop="240dp"
         android:gravity="center_horizontal"
         android:hint="Y"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/vector2X"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
     <EditText
         android:id="@+id/vector2Z"
@@ -82,7 +85,8 @@
         android:hint="Z"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/vector2Y"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText" />
 
     <Button
         android:id="@+id/calculate_button"
@@ -100,8 +104,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calculate_button"
-        tools:text="(0; 0; 0)" /></androidx.constraintlayout.widget.ConstraintLayout>
+        tools:text="(0; 0; 0)" />
+</androidx.constraintlayout.widget.ConstraintLayout>
