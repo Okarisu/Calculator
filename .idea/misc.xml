@@ -4,10 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_slideshow.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_vektorSoucin.xml" value="0.25" />
-        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/menu/activity_main_drawer.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_scalar_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_vector_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
