@@ -1,4 +1,4 @@
-﻿# Calculator
+# Calculator
 
 Zdrojový repozitář mého školního projektu vzorcové kalkulačky pro Android
 
