@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.calculator.databinding.FragmentVectorsAngleBinding
 import com.example.calculator.math.functions.ScalarProduct
+import com.example.calculator.math.functions.VectorMagnitude
+import kotlin.math.cos
 
 
-class vectors_skalarni_soucin : Fragment() {
+class vectors_uhel_vektoru : Fragment() {
 
     private var _binding: FragmentVectorsAngleBinding? = null
 
@@ -23,12 +25,12 @@ class vectors_skalarni_soucin : Fragment() {
 
         _binding = FragmentVectorsAngleBinding.inflate(inflater, container, false)
 
-        binding.calculateButton.setOnClickListener { computeScalarProduct() }
+        binding.calculateButton.setOnClickListener { computeVectorAngle() }
 
         return binding.root
     }
 
-    private fun computeScalarProduct() {
+    private fun computeVectorAngle() {
         val x1 = binding.vector1X.text.toString().toDoubleOrNull()
         val y1 = binding.vector1Y.text.toString().toDoubleOrNull()
         val z1 = binding.vector1Z.text.toString().toDoubleOrNull()
@@ -38,12 +40,18 @@ class vectors_skalarni_soucin : Fragment() {
         val z2 = binding.vector2Z.text.toString().toDoubleOrNull()
 
         var numerator = ScalarProduct().GetScalarProduct(x1, y1, z1, x2, y2, z2)
+        val nomenator1 = VectorMagnitude().GetVectorMagnitude(x1, y1, z1)
+        val nomenator2 = VectorMagnitude().GetVectorMagnitude(x2, y2, z2)
 
-        var result = ScalarProduct().GetScalarProduct(x1, y1, z1, x2, y2, z2).toString()
+        var result: String
 
-        if(result == "null"){
+        if (numerator != null && nomenator1 != null && nomenator2 != null) {
+            val fraction: Double = ScalarProduct().GetScalarProduct(x1, y1, z1, x2, y2, z2)?.div((nomenator1*nomenator2))
+val angle = cos(fraction)
+        } else {
             result = ""
         }
+
         binding.result.text = result
     }
 

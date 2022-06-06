@@ -1,8 +1,6 @@
 package com.example.calculator.math.functions
 
-public class ScalarProduct(
-
-) {
+public class ScalarProduct() {
     public fun GetScalarProduct(
         x1: Double?,
         y1: Double?,
