@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/activity_main.xml" value="0.3171875" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/app_bar_main.xml" value="0.296875" />
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/content_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_home.xml" value="0.296875" />
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_scalar_product.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_vector_product.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/fragment_vectors_angle.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/nav_header_main.xml" value="0.3046875" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/layout/settings.xml" value="0.3046875" />
         <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/menu/main.xml" value="0.296875" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.158" />
+        <entry key="..\:/Users/Toohka/Documents/.DEV/Calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.187" />
       </map>
     </option>
   </component>
