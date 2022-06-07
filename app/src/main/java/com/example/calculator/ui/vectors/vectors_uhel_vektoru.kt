@@ -9,6 +9,7 @@ import com.example.calculator.databinding.FragmentVectorsAngleBinding
 import com.example.calculator.math.functions.ScalarProduct
 import com.example.calculator.math.functions.VectorMagnitude
 import kotlin.math.cos
+import kotlin.math.pow
 
 
 class vectors_uhel_vektoru : Fragment() {
@@ -25,12 +26,12 @@ class vectors_uhel_vektoru : Fragment() {
 
         _binding = FragmentVectorsAngleBinding.inflate(inflater, container, false)
 
-        binding.calculateButton.setOnClickListener { computeVectorAngle() }
+        binding.calculateButton.setOnClickListener { binding.result.text = computeVectorAngle() }
 
         return binding.root
     }
 
-    private fun computeVectorAngle() {
+    private fun computeVectorAngle(): String {
         val x1 = binding.vector1X.text.toString().toDoubleOrNull()
         val y1 = binding.vector1Y.text.toString().toDoubleOrNull()
         val z1 = binding.vector1Z.text.toString().toDoubleOrNull()
@@ -45,14 +46,13 @@ class vectors_uhel_vektoru : Fragment() {
 
         var result: String
 
-        if (numerator != null && nomenator1 != null && nomenator2 != null) {
-            val fraction: Double = ScalarProduct().GetScalarProduct(x1, y1, z1, x2, y2, z2)?.div((nomenator1*nomenator2))
-val angle = cos(fraction)
+        if(numerator == null || nomenator1 == null || nomenator2 == null){
+            return ""
         } else {
-            result = ""
+            val fraction: Double = numerator.div((nomenator1 * nomenator2))
+            val angle = cos(fraction).pow(-1)
+            return angle.toString()
         }
-
-        binding.result.text = result
     }
 
 
