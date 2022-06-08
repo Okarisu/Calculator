@@ -15,7 +15,7 @@
         android:layout_marginTop="120dp"
         android:gravity="center_horizontal"
         android:hint="X"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
@@ -28,7 +28,7 @@
         android:layout_marginTop="120dp"
         android:gravity="center_horizontal"
         android:hint="Y"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toEndOf="@+id/vector1X"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
@@ -41,7 +41,7 @@
         android:layout_marginTop="120dp"
         android:gravity="center_horizontal"
         android:hint="Z"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toEndOf="@+id/vector1Y"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
@@ -57,7 +57,7 @@
         android:layout_marginTop="240dp"
         android:gravity="center_horizontal"
         android:hint="X"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
@@ -70,7 +70,7 @@
         android:layout_marginTop="240dp"
         android:gravity="center_horizontal"
         android:hint="Y"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toEndOf="@+id/vector2X"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
@@ -83,7 +83,7 @@
         android:layout_marginTop="240dp"
         android:gravity="center_horizontal"
         android:hint="Z"
-        android:inputType="numberDecimal"
+        android:inputType="numberSigned"
         app:layout_constraintStart_toEndOf="@+id/vector2Y"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />

@@ -7,7 +7,7 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Calc</string>
+    <string name="menu_home">Kalkulačka</string>
     <string name="homepage_text">Vyberte operaci v liště nalevo</string>
     <string name="calculate">Spočítat</string>
 
