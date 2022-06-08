@@ -19,5 +19,10 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_vectors_angle" />
 
+        <item
+            android:id="@+id/nav_vector_magnitude"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_vector_magnitude" />
+
     </group>
 </menu>

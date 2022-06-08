@@ -28,4 +28,9 @@
         android:name="com.example.calculator.ui.vectors.vectors_uhel_vektoru"
         android:label="@string/menu_vectors_angle"
         tools:layout="@layout/fragment_vectors_angle" />
+    <fragment
+        android:id="@+id/nav_vector_magnitude"
+        android:name="com.example.calculator.ui.vectors.vectors_velikost_vektoru"
+        android:label="@string/menu_vector_magnitude"
+        tools:layout="@layout/fragment_vector_magnitude" />
 </navigation>

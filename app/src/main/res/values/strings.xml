@@ -14,4 +14,5 @@
     <string name="menu_vector_product">Vektorový součin</string>
     <string name="menu_scalar_product">Skalární součin</string>
     <string name="menu_vectors_angle">Úhel vektorů</string>
+    <string name="menu_vector_magnitude">Velikost vektoru</string>
 </resources>
