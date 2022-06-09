@@ -15,4 +15,6 @@
     <string name="menu_scalar_product">Skalární součin</string>
     <string name="menu_vectors_angle">Úhel vektorů</string>
     <string name="menu_vector_magnitude">Velikost vektoru</string>
+
+    <string name="menu_pytha">Pythagorova věta</string>
 </resources>

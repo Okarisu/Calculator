@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.vectors.vectors_vektorovy_soucin">
+    tools:context=".ui.vectors.vectors_uhel_vektoru">
 
     <!-- První vektor -->
     <EditText

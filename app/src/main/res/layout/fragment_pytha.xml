@@ -6,42 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".ui.math.math_pytha">
 
+    <ImageView
+        android:id="@+id/img_right_triangle"
+        android:layout_width="326dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_triangle_rectangular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
-        android:id="@+id/a"
+        android:id="@+id/val_a"
         android:layout_width="53dp"
         android:layout_height="49dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="280dp"
         android:gravity="center_horizontal"
-        android:hint="X"
+        android:hint="a"
         android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
 
     <EditText
-        android:id="@+id/b"
+        android:id="@+id/val_b"
         android:layout_width="53dp"
         android:layout_height="49dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="176dp"
         android:gravity="center_horizontal"
-        android:hint="Y"
+        android:hint="b"
+        android:text="@+id/res_c"
         android:inputType="numberSigned"
-        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
 
     <EditText
-        android:id="@+id/c"
+        android:id="@+id/val_c"
         android:layout_width="53dp"
         android:layout_height="49dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="128dp"
         android:gravity="center_horizontal"
-        android:hint="Z"
+        android:hint="c"
+        android:text="@+id/res_c"
         android:inputType="numberSigned"
-        app:layout_constraintStart_toEndOf="@+id/vectorY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,HardcodedText" />
 
@@ -54,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/b"
+        app:layout_constraintTop_toBottomOf="@+id/val_b"
         tools:ignore="MissingConstraints" />
 
     <TextView

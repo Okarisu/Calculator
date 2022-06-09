@@ -33,4 +33,10 @@
         android:name="com.example.calculator.ui.vectors.vectors_velikost_vektoru"
         android:label="@string/menu_vector_magnitude"
         tools:layout="@layout/fragment_vector_magnitude" />
+
+    <fragment
+        android:id="@+id/nav_pytha"
+        android:name="com.example.calculator.ui.math.math_pytha"
+        android:label="@string/menu_pytha"
+        tools:layout="@layout/fragment_pytha" />
 </navigation>
