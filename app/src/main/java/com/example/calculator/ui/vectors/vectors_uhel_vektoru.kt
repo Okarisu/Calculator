@@ -8,10 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.calculator.databinding.FragmentVectorsAngleBinding
 import com.example.calculator.math.functions.ScalarProduct
 import com.example.calculator.math.functions.VectorMagnitude
-import kotlin.math.PI
-import kotlin.math.acos
-import kotlin.math.cos
-import kotlin.math.pow
+import kotlin.math.*
 
 
 class vectors_uhel_vektoru : Fragment() {

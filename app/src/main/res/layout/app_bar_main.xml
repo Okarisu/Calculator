@@ -22,25 +22,5 @@
 
     <include layout="@layout/content_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_menu_day" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_conf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/fab_main"
-        app:layout_constraintStart_toStartOf="@+id/fab_main"
-        app:srcCompat="@android:drawable/ic_menu_day" />
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

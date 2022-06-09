@@ -28,49 +28,48 @@ class math_pytha : Fragment() {
 
         _binding = FragmentPythaBinding.inflate(inflater, container, false)
 
-        binding.calculateButton.setOnClickListener { Pytha() }
+        binding.calculateButton.setOnClickListener { binding.result.text = Pytha() }
 
         return binding.root
     }
 
-    private fun Pytha() {
-        val a = binding.valA.text.toString().toDoubleOrNull()
-        val b = binding.valB.text.toString().toDoubleOrNull()
-        val c = binding.valC.text.toString().toDoubleOrNull()
+    private fun Pytha(): String {
+        var a = binding.valA.text.toString().toDoubleOrNull()
+        var b = binding.valB.text.toString().toDoubleOrNull()
+        var c = binding.valC.text.toString().toDoubleOrNull()
 
-        if ((a == null && b == null) || (a == null && c == null) || (b == null && c == null)) {
-            null
+        return if (((a == null && b == null) || (a == null && c == null) || (b == null && c == null)) || ((a != null) && (b != null) && (c != null))) {
+            //Ošetření stavu 'všechny hodnoty zadané' a 'zadáno málo hodnot'
+            ""
         } else {
-
-            binding.result.text = "42"
-        }
-    }
-
-    private fun ComputePytha(a: Double, b: Double, c: Double): Double? {
-
-
-           return if (a == null) {
-                val aPow = c.pow(2) - b.pow(2)
-                if (aPow < 0)
-                    null
-                else
-                    sqrt(aPow)
+            if (a == null) {
+                a = ComputePytha(c!!, b!!, true)
             } else if (b == null) {
-                val bPow = c.pow(2) - a.pow(2)
-                if (bPow < 0)
-                    null
-                else
-                    sqrt(bPow)
+                b = ComputePytha(c!!, b!!, true)
             } else {
-                sqrt(a.pow(2) + b.pow(2))
+                c = ComputePytha(a, b, false)
             }
-
-    }
-
-
-        override fun onDestroyView() {
-            super.onDestroyView()
-            _binding = null
+            a.toString() + "² + " + b.toString() + "² = " + c.toString() + "²"
         }
-
     }
+
+    private fun ComputePytha(valA: Double, valB: Double, ordinate: Boolean): Double? {
+
+        return if (ordinate) {
+            val bPow = valA.pow(2) - valB.pow(2)
+            if (bPow < 0)
+                null
+            else
+                sqrt(bPow)
+        } else {
+            sqrt(valA.pow(2) + valB.pow(2))
+
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+}
